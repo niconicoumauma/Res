@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include "includes.h"
 
 int ReqAccess( int, int *, char * );
 int ChangePasswd( int, char *, char * );
+void debug( void *, int );
+
 
 int main( int argc,char *argv[] )
 {

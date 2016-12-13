@@ -13,6 +13,7 @@ char username_global[100];
 char vncpasswd_global[10];
 struct timeval tv;
 
+
 int print_resp( void *, int, char **, char ** );
 
 /**
@@ -102,8 +103,8 @@ int print_resp( void *get_prm, int col_cnt, char ** row_txt, char **col_name )
 
 	int i;
 	char vncpw_change_command[256];
-	unsigned char rand_num = 0;
-	unsigned char onetime_passwd[10];
+	char rand_num = 0;
+	char onetime_passwd[10];
 
 	memset( vncpw_change_command, 0x00, sizeof( vncpw_change_command ) );
 
